@@ -1,0 +1,11 @@
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\bin\Debug\ApiLibary.dll.config
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\bin\Debug\ApiLibary.dll
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\bin\Debug\ApiLibary.pdb
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\obj\Debug\ApiLibary.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\obj\Debug\ApiLibary.csproj.CopyComplete
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\obj\Debug\ApiLibary.dll
+C:\Users\PC\source\repos\WebAPIFetcherClientTest\CompanyBroker_WebApiClient_test\ApiLibary\obj\Debug\ApiLibary.pdb

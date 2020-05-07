@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -28,10 +30,6 @@ namespace ApiLibary
             {
                 url = $"http://localhost:44398/Api/People/"+$"{personId}";
             }
-            else
-            {
-                url = $"http://localhost:44398/Api/People"; 
-            }
 
             //-- Opens up a new Http request from the ApiClient created with the url path.
             using (HttpResponseMessage response = await APIHelper.ApiClient.GetAsync(url))
@@ -44,6 +42,36 @@ namespace ApiLibary
                     PersonModel person = await response.Content.ReadAsAsync<PersonModel>();
 
                     return person;
+                }
+                else
+                {
+                    //-- Throws an exception if it's not successful
+                    throw new Exception(response.ReasonPhrase);
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Get's all persons from an array.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ObservableCollection<PersonModel>> GetAllPersons()
+        {
+            //-- The list containing all the persons
+            var PersonList = new ObservableCollection<PersonModel>();
+
+            //-- Url holder
+            string url = $"http://localhost:44398/Api/People";
+
+            //-- Opens up a new Http request from the ApiClient created with the url path.
+            using (HttpResponseMessage response = await APIHelper.ApiClient.GetAsync(url))
+            {
+                //-- If it's successfull, we can do something with the returned data.
+                if (response.IsSuccessStatusCode)
+                {
+                    //-- Awaits the response of the content requested in async, but it must convert into a PersonModel list
+                    return await response.Content.ReadAsAsync<ObservableCollection<PersonModel>>();
                 }
                 else
                 {
